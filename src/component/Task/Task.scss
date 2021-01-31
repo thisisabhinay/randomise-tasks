@@ -1,0 +1,27 @@
+.task {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border-left: 4px solid transparent;
+  margin-left: -2rem;
+  padding: 0.5rem 0 0.5rem 2rem;
+  transition: all 0.2s ease-in-out;
+
+  .task__meta {
+    color: #919497;
+    font-size: 14px;
+  }
+
+  &.marked-done {
+    text-decoration: line-through;
+  }
+
+  &:hover {
+    border-left: 4px solid #212427;
+    background: rgb(241, 244, 247);
+    background: linear-gradient(
+      90deg,
+      rgba(241, 244, 247, 0.9) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+}

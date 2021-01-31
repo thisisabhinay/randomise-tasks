@@ -1,0 +1,38 @@
+.card {
+  background-color: #fff;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  border: 1px solid #e1e4e7;
+  transition: all 200ms ease-in-out;
+
+  &.card--smaller {
+    opacity: 0.8;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 8px 2px #e1e4e7;
+    border-color: #d1d4d7;
+
+    &.card--smaller {
+      opacity: 1;
+    }
+  }
+}
+
+.heading {
+  font-size: 28px;
+  margin: 0 0 1rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f1f4f7;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
+
+  .task:last-child {
+    margin-bottom: 0;
+  }
+}
