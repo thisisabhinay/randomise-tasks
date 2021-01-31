@@ -87,9 +87,11 @@ export default function App() {
     let dailyTasks = store.get("dailyTasks").list;
     switch (type) {
       case "big":
-        return <Task task={dailyTasks.big} />;
+        return <Task task={dailyTasks.big} index={0} />;
       case "smaller":
-        return dailyTasks.smaller.map(taskItem => <Task task={taskItem} />);
+        return dailyTasks.smaller.map((taskItem, index) => (
+          <Task task={taskItem} index={index} />
+        ));
     }
   };
 
