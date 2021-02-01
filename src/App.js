@@ -51,6 +51,8 @@ export default function App() {
   };
 
   const generateSmallerTasks = list => {
+    // Tmporarly generating one task for now
+    return [list[randomIntFromInterval(0, list.length - 1)]];
     // Generate 3 small tasks
     let newList = [];
     let chosenTask = null;
@@ -104,7 +106,7 @@ export default function App() {
 
     // Checking time difference since last set of tasks generated
     // If last update is less than 24 hours from now do nothing.
-    if (moment(dailyTasks.lastUpdated).diff(moment(), "hours") < 24) {
+    if (moment(dailyTasks.lastUpdated).diff(moment(), "hours") > 24) {
       return;
     }
     // Else create new set of daily tasks
