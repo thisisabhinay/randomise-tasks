@@ -36,7 +36,7 @@ const data = [
     progress: 80
   },
   {
-    text: "VDB Shopping: Designing the B2C Ecommerce experience",
+    text: "VDB Shopping: Designing the B2C e-commerce experience",
     value: 100,
     type: "Portfolio Project",
     progress: 20
